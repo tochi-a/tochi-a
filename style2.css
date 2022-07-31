@@ -1,0 +1,128 @@
+.images{
+    background-image: url(images/image-product-mobile.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 335px;
+    height: 235px;
+    margin-bottom: 0;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+body{
+    background-color: hsl(31, 42%, 88%);
+    display: flex;
+    justify-content: center;
+}
+
+body *{
+    box-sizing: border-box;
+}
+
+p{
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: hsl(228, 12%, 48%);
+}
+
+#strike-through{
+    text-decoration: line-through;
+}
+
+h1{
+    font-family: "Fraunces";
+    color: hsl(212, 21%, 14%);
+    font-stretch: expanded;
+}
+
+h2{
+    font-family: "Fraunces";
+    color: hsl(158, 36%, 37%);
+}
+
+button{
+    display: block;
+    font-family: "Montserrat";
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    padding: 10px;
+    width: 295px;
+    border-radius: 6px;
+}
+
+button:hover{
+    background-color: hsl(158, 77%, 12%);
+  }
+
+.price{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+}
+
+.price h1{
+    justify-content: flex-start;
+}
+
+.price p{
+    margin-left: 30px;
+}
+
+.write-up{
+    background-color: hsl(0, 0%, 100%);
+    padding: 20px;
+    width: 335px;
+    height: fit-content;
+    padding-top: 5px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+container{
+    border-radius: 12px;
+}
+
+@media only screen and (min-width: 600px){
+    .images{background-image: url(images/image-product-desktop.jpg);
+        float: left;
+        max-width: 300px;
+        background-size: cover;
+        height: 400px;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 12px;
+        border-top-left-radius: 12px;
+    }
+
+    .write-up{
+        float: left;
+        border-bottom-left-radius: 0;
+        max-width: 300px;
+        height: 400px;
+        border-top-right-radius: 12px;
+        border-bottom-right-radius: 12px;
+    }
+
+    .container::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    button{
+        max-width: 260px;
+    }
+
+    body{
+        background-color: rgb(199, 199, 18);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container{
+        margin-top: 70px;
+        /*box-shadow: 2px 2px 5px rgb(85, 85, 5), -2px -2px 5px rgb(85, 85, 5);*/
+    }
+}
